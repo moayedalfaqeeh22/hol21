@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة ويب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="about"><a href="index.html">الصفحة الرئيسية</a></button>
+        <button id="about"><a href="صفحة الحجوزات.html">الحجوزات</a></button>
+        <button h"><a href="صفحة الخدمات.html">الخدمات</a></button> 
+
+
+
+    </nav>
+    <style>
+        body {
+    background-color: #f8d3e4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3700b3;
+}
+    </style>
+    <div class="container">
+        <input type="text" class="input-field" placeholder="ادخل رقم الهاتف">
+        <input type="email" class="input-field" placeholder="ادخل البريد الإلكتروني">
+        <input type="text" class="input-field" placeholder="ادخل اسمك الثالث">
+        <button class="submit-button" onclick="submitForm()">ارسل طلب التواصل مع قسم الشكاوي</button>
+    </div>
+    <script src="script.js">
+        function submitForm() {
+    alert("تم إرسال الطلب بنجاح!");
+    // هنا يمكنك إضافة الشفرة الخاصة بإرسال البيانات إلى الخادم
+}
+    </script>
+</body>
+</html>
