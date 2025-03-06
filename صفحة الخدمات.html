@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هول ان ون</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="about"><a href="الصفحة الرئيسية.html">الصفحة الرئيسية</a></button>
+        <button id="about"><a href="صفحة الحجوزات.html">الحجوزات</a></button>
+        <button id="contact">  <a href="صفحة الاتصال.html">الاتصال</a>   </button>
+    </nav>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0c8d8;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    min-height: 120px;
+}
+nav{
+    text-align: center;
+    font-size: larger;
+    size: 500px;
+}
+.dropdown {
+    margin-top: 20px;
+    text-align: center;
+}
+ label{
+     font-size: x-large;    
+ }
+ section{
+    font-size: x-large;
+    size: ;
+ }
+    </style>
+
+    <header>
+        <input type="text" placeholder="https://" id="urlInput">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box" id="box1">
+                <img src="C:\Users\user\Desktop\اوس محمد الفقيه\النشاط الثاني\golf-1909115_1280.jpg" alt="width="50%" height="100%">
+                <h2>متجر المبدعين</h2>
+            </div>
+            <div class="box" id="box2">
+                <img src="C:\Users\user\Desktop\اوس محمد الفقيه\النشاط الثاني\bedroom-389254_1280.jpg" alt="width="50%" height="100%">
+                <h2>المطاعم والمنافذ</h2>
+            </div>
+            <div class="box" id="box3">
+                <img src="C:\Users\user\Desktop\اوس محمد الفقيه\النشاط الثاني\lasagna-5994612_1280.jpg" alt="width="50%" height="100%">
+                <h2>خدمة الإعداد بالطعام</h2>
+            </div>
+            <div class="box" id="box4">
+                <img src="C:\Users\user\Desktop\اوس محمد الفقيه\النشاط الثاني\books-2596809_1280.jpg" alt="width="50%" height="100%">
+                <h2>أنشطة أخرى</h2>
+            </div>
+            <div class="dropdown">
+                <label for="options">أقسام أخرى:</label>
+                <select id="options">
+                    <option value="training">ساحة تدريب لمصادر الأسئلة</option>
+                    <option value="lesson">درس الحروف</option>
+                    <option value="video">الفيديو التعريفي</option>
+                    <option value="help">خدمة المساعدة على حمل أدوات العجل</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js">
+        document.getElementById('options').addEventListener('change', function() {
+    alert(`تم اختيار: ${this.value}`);
+});
+    </script>
+</body>
+</html>
